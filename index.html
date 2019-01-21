@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./Workspace/bt4surv/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Workspace/bt4surv/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+
+<div class="text-center m-t-10">
+    <h1 class="h1" id="title">Programming Language Survey</h1>
+</div>
+<div class="container pad-3">
+
+    <div class="row justify-content-md-center">
+        <div class="col-md-12">
+            <p id="description" class="text-center">Please share 5 minutes to fill out this form, it will help us
+                improve tools for programmers. Thank you in advance!</p>
+        </div>
+    </div>
+    <form id="survey-form">
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name"
+                           placeholder="Your name" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="email" id="email-label">Email address</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="email" class="form-control" required id="email" aria-describedby="emailHelp"
+                               placeholder="Enter email">
+                    </div>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="name" id="number-label">Years programming</label>
+                    <input type="number" min="0" max="100" class="form-control" id="number"
+                           aria-describedby="years programming"
+                           placeholder="Years" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>What is your main?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mainRadios" id="exampleRadios1"
+                               value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Front-end
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mainRadios" id="exampleRadios2"
+                               value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Back-end
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mainRadios" id="exampleRadios3"
+                               value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Full stack
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Languages that you know</label>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="js" id="js">
+                        <label class="form-check-label" for="js">
+                            JavaScript
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="cpp" id="cpp">
+                        <label class="form-check-label" for="cpp">
+                            C++
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="c4" id="c4">
+                        <label class="form-check-label" for="c4">
+                            C#
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="pth" id="pth">
+                        <label class="form-check-label" for="pth">
+                            Python
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fav" id="fav-label">Favourite programming language</label>
+                    <select class="form-control" id="fav" aria-describedby="name" required>
+                        <option>JavaScript</option>
+                        <option>Python</option>
+                        <option>C++</option>
+                        <option>C</option>
+                        <option>C#</option>
+                        <option>PHP</option>
+                        <option>Ruby</option>
+                        <option>Cobol</option>
+                        <option>Java</option>
+                        <option>Assembly</option>
+                        <option>Perl</option>
+                        <option>Go</option>
+                        <option>Swift</option>
+                        <option>Objective-C</option>
+                        <option>Kotlin</option>
+                        <option>R</option>
+                        <option>Visual Basic</option>
+                        <option>Scratch</option>
+                        <option>Delphi</option>
+                        <option>PL/SQL</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <textarea class="form-control" aria-label="Additional comments" placeholder="Additional comments..."></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
